@@ -1,0 +1,133 @@
+@import "tailwindcss/preflight";
+@tailwind utilities;
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0;
+  }
+
+  /* Hide non-print elements */
+  #downloadBtn,
+  nav,
+  #dnav,
+  .print\:hidden {
+    display: none !important;
+  }
+
+  /* Basic setup */
+  html,
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+  }
+
+  .print-sections {
+    counter-reset: page 1;
+  }
+
+  /* Print section setup */
+  .print-section {
+    page-break-before: always !important;
+    break-before: page !important;
+    padding: 2cm !important;
+    margin: 0 !important;
+  }
+
+  /* Print content */
+  .print-content {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Experience items */
+  .experience-item {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    margin-bottom: 2cm !important;
+  }
+
+  /* Project items */
+  .project-item {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+    margin-bottom: 2cm !important;
+  }
+
+  /* Force new page */
+  .print-new-page {
+    page-break-before: always !important;
+    break-before: page !important;
+    padding-top: 2cm !important;
+  }
+
+  /* Section break */
+  .print-section-break {
+    height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    page-break-after: always !important;
+    break-after: page !important;
+    visibility: hidden !important;
+  }
+
+  /* Intro page */
+  .print\:intro {
+    height: 100vh !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    page-break-after: always !important;
+    break-after: page !important;
+    padding: 2cm !important;
+  }
+
+  /* Motion components */
+  [data-framer-component-type] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  /* Headings */
+  h1,
+  h2,
+  [data-framer-component-type="h1"] {
+    break-after: avoid !important;
+    page-break-after: avoid !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  /* Text content */
+  p,
+  ul,
+  li {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Print optimizations */
+  * {
+    color: black !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Additional page controls */
+  @page {
+    margin: 0;
+  }
+
+  /* Ensure content stays together */
+  .print-experience-content,
+  .print-projects-content {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+}
+
+.scroll-nav {
+  scroll-padding-top: 36px;
+}
