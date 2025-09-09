@@ -487,10 +487,10 @@ export default function HomePage() {
               <li>
                 Used tools: TypeScript, Html, CSS, React, Google Maps API.
               </li>
-              <li>
+              {/* <li>
                 GitHub:
                 https://github.com/JocelineR/solar-buffer-space-scraper-v2.
-              </li>
+              </li> */}
             </MotionUl>
 
             <div className="mx-3 mt-10 content-center pr-7 md:mx-10 print:hidden">
@@ -563,7 +563,7 @@ export default function HomePage() {
               <li>
                 Used tools: TypeScript, Html, CSS, EdgeDB, React, OpenAI API.
               </li>
-              <li>GitHub: https://github.com/JocelineR/wortwildnis.</li>
+              {/* <li>GitHub: https://github.com/JocelineR/wortwildnis.</li> */}
             </MotionUl>
             <div className="mx-3 mt-10 content-center pr-7 md:mx-10 print:hidden">
               <MotionImg
@@ -636,7 +636,7 @@ export default function HomePage() {
                 Used tools: TypeScript, Html, CSS, React, Framer Motion,
                 Tailwind CSS.
               </li>
-              <li>GitHub: https://github.com/JocelineR/buro-ries.</li>
+              {/* <li>GitHub: https://github.com/JocelineR/buro-ries.</li> */}
             </MotionUl>
 
             <div className="mx-10 ml-3 flex flex-row content-center gap-5 pt-10 md:mx-10 md:gap-10 print:hidden">
@@ -701,7 +701,7 @@ export default function HomePage() {
                 to showcase her products.
               </li>
               <li>Used tools: JavaScript, Html, CSS, Figma.</li>
-              <li>GitHub: https://github.com/JocelineR/diareDecoHogar.</li>
+              {/* <li>GitHub: https://github.com/JocelineR/diareDecoHogar.</li> */}
             </MotionUl>
 
             <div className="mx-3 mt-10 content-center pr-7 md:mx-10 print:hidden">
