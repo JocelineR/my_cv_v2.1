@@ -10,6 +10,13 @@ import { BubblesBG } from "~/components/bubblesBG";
 //   icons: [{ rel: "icon", url: "/favicon.ico" }],
 // };
 
+export const metadata: Metadata = {
+  title: "My CV",
+  description:
+    "Website for showing some of my experience as Software Developer",
+  icons: [{ rel: "icon", url: "/happyface-cv.svg" }],
+};
+
 const geist = Geist({
   subsets: ["latin"],
   variable: "--font-geist-sans",

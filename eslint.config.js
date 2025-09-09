@@ -1,22 +1,23 @@
-import { FlatCompat } from "@eslint/eslintrc";
+import js from "@eslint/js";
 import tseslint from "typescript-eslint";
+// import nextPlugin from "@next/eslint-plugin-next";
+import { FlatCompat } from "@eslint/eslintrc";
 
 const compat = new FlatCompat({
   baseDirectory: import.meta.dirname,
 });
 
-export default tseslint.config(
+export default [
+  js.configs.recommended,
+  ...tseslint.configs.recommended,
+  ...tseslint.configs.recommendedTypeChecked,
+  ...tseslint.configs.stylisticTypeChecked,
+  ...compat.extends("next/core-web-vitals"),
   {
     ignores: [".next"],
   },
-  ...compat.extends("next/core-web-vitals"),
   {
-    files: ["**/*.ts", "**/*.tsx"],
-    extends: [
-      ...tseslint.configs.recommended,
-      ...tseslint.configs.recommendedTypeChecked,
-      ...tseslint.configs.stylisticTypeChecked,
-    ],
+    files: ["**/*.{ts,tsx}"],
     rules: {
       "@typescript-eslint/array-type": "off",
       "@typescript-eslint/consistent-type-definitions": "off",
@@ -34,15 +35,15 @@ export default tseslint.config(
         { checksVoidReturn: { attributes: false } },
       ],
     },
-  },
-  {
     linterOptions: {
       reportUnusedDisableDirectives: true,
     },
     languageOptions: {
       parserOptions: {
         projectService: true,
+        ecmaVersion: "latest",
+        sourceType: "module",
       },
     },
   },
-);
+];
