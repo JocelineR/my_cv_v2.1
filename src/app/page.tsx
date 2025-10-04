@@ -119,7 +119,7 @@ export default function HomePage() {
                 transition={{ delay: 0.5, duration: 1.1 }}
                 //y: [-1000, 0],
               >
-                Some key points about me...
+                About me...
               </MotionH1>
             </div>
 
@@ -149,7 +149,7 @@ export default function HomePage() {
             </div>
 
             <MotionP
-              className="print:t-0 static px-6 pt-14 text-xl tracking-wide italic md:px-11 md:text-2xl print:px-14 print:pt-0"
+              className="print:t-0 static px-6 pt-14 text-lg tracking-wide italic md:px-11 md:text-2xl print:px-14 print:pt-0"
               // text-justify
 
               initial={{ y: 25, opacity: 0 }}
@@ -158,18 +158,22 @@ export default function HomePage() {
               viewport={{ once: true, amount: 0.5 }}
               transition={{ delay: 0.5, duration: 1.4 }}
             >
-              I’ve been working as a Software Engineer and have gained
-              experience in Backend and Frontend development, focused lately on
-              frontend development with +3 years of professional experience in
-              Java, Kubernetes MySQL, EdgeDB, Javascript, React, CSS, Html and
-              Typescript. <br /> <br /> I have a bachelor's degree in Computer
-              Science Engineering <br /> <br /> I've been trying to learn how to
-              use some of the different development tools so I can share my
-              skills and work on different projects that can contribute
-              something nice to the world. <br /> <br /> Just as I enjoy coding,
-              I also enjoy meditation, connecting with people, nature, roller
-              skating, traveling, reading, learning new things and enjoying time
-              with the people I love.
+              I am a Software Engineer with over three years of professional
+              experience in backend and frontend development, with a recent
+              focus on frontend technologies. <br /> My technical expertise
+              includes{" "}
+              <span className="highlight-bold">
+                Java, Kubernetes, MySQL, EdgeDB, JavaScript, React, TypeScript,
+                HTML, CSS
+              </span>
+              . <br /> I hold a bachelor’s degree in Computer Science
+              Engineering. <br /> <br /> I am continuously expanding my
+              knowledge of development tools and frameworks, with the goal of
+              contributing to impactful projects that create meaningful value.{" "}
+              <br /> <br /> Beyond coding, I enjoy meditation, connecting with
+              people and nature, roller skating, traveling, reading, and
+              learning new things, which inspire my creativity and balance in my
+              personal and professional life.
             </MotionP>
             {/* I'm just another human immersed in this world of coding. */}
           </div>
@@ -194,7 +198,7 @@ export default function HomePage() {
               //y: [-1000, 0],
             >
               {/* pending */}
-              Here are some of my recent work experiences...
+              Work experience...
             </MotionH1>
           </div>
 
@@ -239,16 +243,35 @@ export default function HomePage() {
               viewport={{ once: true, amount: 0.5 }}
               transition={{ delay: 0.5, duration: 1.4 }}
             >
-              <li>Front-end development.</li>
-              <li>Back-end development.</li>
-              <li>Using TypeScript, JavaScript mainly.</li>
               <li>
-                Working with React, HTML, CSS for doing some web development.
+                {" "}
+                <span className="highlight-bold">Front-end </span> development.
               </li>
-              <li>Working with EdgeDB as DB.</li>
               <li>
-                Using Figma to create designs and mockups for the projects and
-                for project planning.
+                {" "}
+                <span className="highlight-bold">Back-end </span> development.
+              </li>
+              <li>
+                Using{" "}
+                <span className="highlight-bold">TypeScript, JavaScript </span>{" "}
+                mainly.
+              </li>
+              <li>
+                Working with{" "}
+                <span className="highlight-bold"> React, HTML, CSS </span> for
+                doing some web development.
+              </li>
+              <li>
+                Working with <span className="highlight-bold">EdgeDB </span> as
+                DB.
+              </li>
+              <li>
+                Using <span className="highlight-bold">Vercel </span> for
+                deployments.
+              </li>
+              <li>
+                Using <span className="highlight-bold">Figma </span> to create
+                designs and mockups for the projects and for project planning.
               </li>
             </MotionUl>
           </div>
@@ -290,10 +313,24 @@ export default function HomePage() {
               viewport={{ once: true, amount: 0.5 }}
               transition={{ delay: 0.5, duration: 1.4 }}
             >
-              <li>Front-end development using Elm, HTML and CSS.</li>
-              <li>Working with Elm to create new features for the web page.</li>
-              <li>Using PHP for working with API DB management.</li>
-              <li>Using mysql as a DB.</li>
+              <li>
+                {" "}
+                <span className="highlight-bold">Front-end </span> development
+                using <span className="highlight-bold"> Elm, HTML </span> and{" "}
+                <span className="highlight-bold"> CSS.</span>
+              </li>
+              <li>
+                Working with <span className="highlight-bold">Elm </span>to
+                create new features for the web page.
+              </li>
+              <li>
+                Using <span className="highlight-bold">PHP </span> for working
+                with <span className="highlight-bold">API's </span> and{" "}
+                <span className="highlight-bold">DB's management. </span>
+              </li>
+              <li>
+                Using <span className="highlight-bold">mysql </span> as a DB.
+              </li>
             </MotionUl>
           </div>
 
@@ -337,16 +374,30 @@ export default function HomePage() {
               transition={{ delay: 0.5, duration: 1.4 }}
             >
               <li>
-                Worked with microservices using tools like Kubernetes and
-                Docker.
+                Worked with{" "}
+                <span className="highlight-bold">microservices </span> using
+                tools like <span className="highlight-bold">Kubernetes </span>{" "}
+                and <span className="highlight-bold">Docker. </span>
               </li>
-              <li>Development of unit tests for the existing and new code.</li>
-              <li>Worked in an agile team.</li>
               <li>
-                Contributed in the development of new features using Java and
-                JavaScript.
+                Development of{" "}
+                <span className="highlight-bold">unit tests </span>
+                for the existing and new code.
               </li>
-              <li>Contributed to QA tasks by performing regression testing.</li>
+              <li>
+                Worked in an{" "}
+                <span className="highlight-bold">agile team. </span>
+              </li>
+              <li>
+                Contributed in the development of new features using{" "}
+                <span className="highlight-bold">Java </span> and{" "}
+                <span className="highlight-bold">JavaScript. </span>
+              </li>
+              <li>
+                Contributed to <span className="highlight-bold">QA </span> tasks
+                by performing{" "}
+                <span className="highlight-bold">regression testing. </span>
+              </li>
               <li>
                 Participation in different parts of the development cycle.
               </li>
@@ -393,18 +444,33 @@ export default function HomePage() {
               viewport={{ once: true, amount: 0.5 }}
               transition={{ delay: 0.5, duration: 1.4 }}
             >
-              <li>Performed tests using SOAP UI.</li>
-              <li>Fixing bugs in the part of the back-end using Java.</li>
               <li>
-                Helped automate CI/CD processes with Bash scripts and other
+                Performed tests using{" "}
+                <span className="highlight-bold">SOAP UI.</span>
+              </li>
+              <li>
+                Fixing bugs in the part of the back-end using{" "}
+                <span className="highlight-bold">Java.</span>
+              </li>
+              <li>
+                Helped automate <span className="highlight-bold">CI/CD </span>
+                processes with{" "}
+                <span className="highlight-bold">Bash scripts </span>and other
                 internal tools.
               </li>
               <li>
-                Participating in a voluntary project in the Frontend area using
-                Angular, HTML, CSS and Angular Material.
+                Participating in a voluntary project in the{" "}
+                <span className="highlight-bold">Frontend </span> area using{" "}
+                <span className="highlight-bold">Angular, HTML, CSS </span> and{" "}
+                <span className="highlight-bold"> Angular Material. </span>
               </li>
-              <li>Worked in a Scrum team.</li>
-              <li>Using Git for version control.</li>
+              <li>
+                Worked in a <span className="highlight-bold">Scrum </span>team.
+              </li>
+              <li>
+                Using <span className="highlight-bold">Git </span>for version
+                control.
+              </li>
             </MotionUl>
           </div>
 
@@ -430,7 +496,7 @@ export default function HomePage() {
               transition={{ delay: 0.5, duration: 1.1 }}
               //y: [-1000, 0],
             >
-              Check out some of my recent projects...
+              Projects...
             </MotionH1>
           </div>
 
@@ -485,7 +551,10 @@ export default function HomePage() {
                 developed this project for a Solar Panel Business in Germany.
               </li>
               <li>
-                Used tools: TypeScript, Html, CSS, React, Google Maps API.
+                Used tools:{" "}
+                <span className="highlight-bold">
+                  TypeScript, Html, CSS, React, Google Maps API.
+                </span>
               </li>
               {/* <li>
                 GitHub:
@@ -493,10 +562,10 @@ export default function HomePage() {
               </li> */}
             </MotionUl>
 
-            <div className="mx-3 mt-10 content-center pr-7 md:mx-10 print:hidden">
+            <div className="mx-3 mt-10 content-center md:mx-10 print:hidden">
               <MotionImg
                 src="images/mitra-solar-1.png"
-                className="imageBorder h-96 w-full md:w-full"
+                className="imageBorder h-auto w-full md:h-96 md:w-full"
                 initial={{ y: 25, opacity: 0 }}
                 // animate={{ opacity: 1 }}
                 whileInView={{ opacity: 1 }}
@@ -561,14 +630,17 @@ export default function HomePage() {
                 learning German.
               </li>
               <li>
-                Used tools: TypeScript, Html, CSS, EdgeDB, React, OpenAI API.
+                Used tools:{" "}
+                <span className="highlight-bold">
+                  TypeScript, Html, CSS, EdgeDB, React, OpenAI API.
+                </span>
               </li>
               {/* <li>GitHub: https://github.com/JocelineR/wortwildnis.</li> */}
             </MotionUl>
-            <div className="mx-3 mt-10 content-center pr-7 md:mx-10 print:hidden">
+            <div className="mx-3 mt-10 content-center md:mx-10 print:hidden">
               <MotionImg
                 src="images/wortwildnis.png"
-                className="imageBorder h-96 w-full md:w-full"
+                className="imageBorder h-auto w-full md:h-96 md:w-full"
                 initial={{ y: 25, opacity: 0 }}
                 // animate={{ opacity: 1 }}
                 whileInView={{ opacity: 1 }}
@@ -633,16 +705,19 @@ export default function HomePage() {
                 needed.
               </li>
               <li>
-                Used tools: TypeScript, Html, CSS, React, Framer Motion,
-                Tailwind CSS.
+                Used tools:{" "}
+                <span className="highlight-bold">
+                  TypeScript, Html, CSS, React, Framer Motion, Tailwind CSS.
+                </span>
               </li>
               {/* <li>GitHub: https://github.com/JocelineR/buro-ries.</li> */}
             </MotionUl>
 
-            <div className="mx-10 ml-3 flex flex-row content-center gap-5 pt-10 md:mx-10 md:gap-10 print:hidden">
+            <div className="mx-3 ml-1 flex flex-row content-center gap-2 pt-10 md:mx-10 md:gap-15 print:hidden">
+              {/* <div className="mx-3 flex flex-row content-center gap-5 pt-10 md:mx-10 md:gap-10 print:hidden"> */}
               <MotionImg
                 src="images/ries-1.png"
-                className="imageBorder h-96 w-7/12"
+                className="imageBorder h-auto w-1/2 md:h-96"
                 initial={{ y: 25, opacity: 0 }}
                 // animate={{ opacity: 1 }}
                 whileInView={{ opacity: 1 }}
@@ -652,7 +727,9 @@ export default function HomePage() {
 
               <MotionImg
                 src="images/ries-3.png"
-                className="imageBorder h-96 w-7/12"
+                className="imageBorder h-auto w-1/2 md:h-96"
+                // className="imageBorder h-auto w-7/12 md:h-96"
+
                 initial={{ y: 25, opacity: 0 }}
                 // animate={{ opacity: 1 }}
                 whileInView={{ opacity: 1 }}
@@ -700,14 +777,19 @@ export default function HomePage() {
                 this would help her to expand her business by having a website
                 to showcase her products.
               </li>
-              <li>Used tools: JavaScript, Html, CSS, Figma.</li>
+              <li>
+                Used tools:{" "}
+                <span className="highlight-bold">
+                  JavaScript, Html, CSS, Figma.
+                </span>
+              </li>
               {/* <li>GitHub: https://github.com/JocelineR/diareDecoHogar.</li> */}
             </MotionUl>
 
-            <div className="mx-3 mt-10 content-center pr-7 md:mx-10 print:hidden">
+            <div className="mx-3 mt-10 content-center md:mx-10 print:hidden">
               <MotionImg
                 src="images/diare.png"
-                className="imageBorder h-96 w-full md:w-full"
+                className="imageBorder h-auto w-full md:h-96 md:w-full"
                 initial={{ y: 25, opacity: 0 }}
                 // animate={{ opacity: 1 }}
                 whileInView={{ opacity: 1 }}
